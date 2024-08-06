@@ -1,0 +1,50 @@
+From edc02c54d3317d2ff4d849e5648f5fb53b87c607 Mon Sep 17 00:00:00 2001
+From: caozhou <caozhou@baai.ac.cn>
+Date: Tue, 6 Aug 2024 15:39:31 +0800
+Subject: [PATCH 1/2] test0
+
+---
+ run.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/run.py b/run.py
+index c80c086a..85afb064 100644
+--- a/run.py
++++ b/run.py
+@@ -4,7 +4,7 @@ from flagscale.logger import logger
+ from flagscale.launcher.runner import SSHRunner
+ from flagscale.launcher.runner import CloudRunner
+ 
+-
++# test
+ @hydra.main(version_base=None, config_name="config")
+ def main(config: DictConfig) -> None:
+     if config.action == "auto_tune":
+-- 
+2.34.1
+
+
+From 98868f415e3613e4a9e2ac64d7228f004aa89ce2 Mon Sep 17 00:00:00 2001
+From: caozhou <caozhou@baai.ac.cn>
+Date: Tue, 6 Aug 2024 15:40:25 +0800
+Subject: [PATCH 2/2] test1
+
+---
+ megatron/pretrain_bert.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/megatron/pretrain_bert.py b/megatron/pretrain_bert.py
+index f5c55302..89322d17 100644
+--- a/megatron/pretrain_bert.py
++++ b/megatron/pretrain_bert.py
+@@ -1,7 +1,7 @@
+ # Copyright (c) 2022, NVIDIA CORPORATION.  All rights reserved.
+ 
+ """Pretrain BERT"""
+-
++# test
+ from functools import partial
+ 
+ import torch
+-- 
+2.34.1
